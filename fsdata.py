@@ -6,7 +6,7 @@ db = firestore.Client.from_service_account_json("firestore-admin.json")
 
 # Create a reference to the Google post.
 doc_ref = db.collection("Ink").document("337")
-doc_ref.update({'may': 1})
+doc_ref.update({'it': 111})
 
 # Then get the data at that reference.
 doc = doc_ref.get()
